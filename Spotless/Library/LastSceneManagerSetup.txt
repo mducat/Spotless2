@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/spotless/Pig Guilty TestZone.unity
+  isLoaded: 1
+  isActive: 1
