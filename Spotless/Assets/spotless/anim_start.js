@@ -1,5 +1,7 @@
 ﻿#pragma strict
 
+var porteSound:AudioClip;
+var pos2:Transform;
 var t:boolean = false;
 var murSet:GameObject;
 var porte:GameObject;
@@ -19,6 +21,7 @@ function Update () {
 }
 
 function OnTriggerEnter() {
+    AudioSource.PlayClipAtPoint(porteSound, pos2.position);
     porte.GetComponent(Animator).enabled=true;
     yield WaitForSeconds(time);
     porte.GetComponent(Animator).enabled=false;
